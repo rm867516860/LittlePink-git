@@ -12,8 +12,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        print("做了UI")
-        print("做了UI2")
+        tabBarController?.tabBar.barTintColor = .black
     }
 
 
