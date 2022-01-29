@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6EBA77E7FB42FB3115A2CA63 /* Pods_LittlePink_git.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AAB2F752BA6585E85B8778F /* Pods_LittlePink_git.framework */; };
 		90A4C6502797001D00F28FEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A4C64F2797001D00F28FEA /* AppDelegate.swift */; };
 		90A4C6522797001D00F28FEA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A4C6512797001D00F28FEA /* SceneDelegate.swift */; };
 		90A4C6542797001D00F28FEA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A4C6532797001D00F28FEA /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4AAB2F752BA6585E85B8778F /* Pods_LittlePink_git.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LittlePink_git.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		90A4C64C2797001D00F28FEA /* LittlePink-git.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LittlePink-git.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		90A4C64F2797001D00F28FEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		90A4C6512797001D00F28FEA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		90A4C65B2797002000F28FEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		90A4C65D2797002000F28FEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		90A4C6632797013500F28FEA /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		99DBDA36523E8A62C8DD2EF4 /* Pods-LittlePink-git.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LittlePink-git.release.xcconfig"; path = "Target Support Files/Pods-LittlePink-git/Pods-LittlePink-git.release.xcconfig"; sourceTree = "<group>"; };
+		9FB40233CB8E4D01D801F865 /* Pods-LittlePink-git.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LittlePink-git.debug.xcconfig"; path = "Target Support Files/Pods-LittlePink-git/Pods-LittlePink-git.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,18 +37,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EBA77E7FB42FB3115A2CA63 /* Pods_LittlePink_git.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		17D8378E109FDCC8F491808B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9FB40233CB8E4D01D801F865 /* Pods-LittlePink-git.debug.xcconfig */,
+				99DBDA36523E8A62C8DD2EF4 /* Pods-LittlePink-git.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		649F3A90D32543DDA984E884 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4AAB2F752BA6585E85B8778F /* Pods_LittlePink_git.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		90A4C6432797001D00F28FEA = {
 			isa = PBXGroup;
 			children = (
 				90A4C6632797013500F28FEA /* .gitignore */,
 				90A4C64E2797001D00F28FEA /* LittlePink-git */,
 				90A4C64D2797001D00F28FEA /* Products */,
+				17D8378E109FDCC8F491808B /* Pods */,
+				649F3A90D32543DDA984E884 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 90A4C6602797002000F28FEA /* Build configuration list for PBXNativeTarget "LittlePink-git" */;
 			buildPhases = (
+				6E1AE91C8CD2F963DD31FBDF /* [CP] Check Pods Manifest.lock */,
 				90A4C6482797001D00F28FEA /* Sources */,
 				90A4C6492797001D00F28FEA /* Frameworks */,
 				90A4C64A2797001D00F28FEA /* Resources */,
+				42281C4DA84733CC30B5D399 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -136,6 +162,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		42281C4DA84733CC30B5D399 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LittlePink-git/Pods-LittlePink-git-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LittlePink-git/Pods-LittlePink-git-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LittlePink-git/Pods-LittlePink-git-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E1AE91C8CD2F963DD31FBDF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LittlePink-git-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		90A4C6482797001D00F28FEA /* Sources */ = {
@@ -288,6 +356,7 @@
 		};
 		90A4C6612797002000F28FEA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FB40233CB8E4D01D801F865 /* Pods-LittlePink-git.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +370,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -316,6 +386,7 @@
 		};
 		90A4C6622797002000F28FEA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99DBDA36523E8A62C8DD2EF4 /* Pods-LittlePink-git.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -329,6 +400,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
