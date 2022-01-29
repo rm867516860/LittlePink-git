@@ -8,9 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		6EBA77E7FB42FB3115A2CA63 /* Pods_LittlePink_git.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AAB2F752BA6585E85B8778F /* Pods_LittlePink_git.framework */; };
+		86CA348D27A5B5B300F4113F /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CA348C27A5B5B300F4113F /* HomeVC.swift */; };
+		86CA348F27A5B8CD00F4113F /* FollowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CA348E27A5B8CD00F4113F /* FollowVC.swift */; };
+		86CA349127A5B8F700F4113F /* DiscovevryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CA349027A5B8F700F4113F /* DiscovevryVC.swift */; };
+		86CA349327A5B91600F4113F /* NearByVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CA349227A5B91600F4113F /* NearByVC.swift */; };
+		86CA349527A5BACF00F4113F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CA349427A5BACF00F4113F /* Constants.swift */; };
 		90A4C6502797001D00F28FEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A4C64F2797001D00F28FEA /* AppDelegate.swift */; };
 		90A4C6522797001D00F28FEA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A4C6512797001D00F28FEA /* SceneDelegate.swift */; };
-		90A4C6542797001D00F28FEA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A4C6532797001D00F28FEA /* ViewController.swift */; };
 		90A4C6572797001D00F28FEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90A4C6552797001D00F28FEA /* Main.storyboard */; };
 		90A4C6592797002000F28FEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90A4C6582797002000F28FEA /* Assets.xcassets */; };
 		90A4C65C2797002000F28FEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90A4C65A2797002000F28FEA /* LaunchScreen.storyboard */; };
@@ -19,10 +23,14 @@
 
 /* Begin PBXFileReference section */
 		4AAB2F752BA6585E85B8778F /* Pods_LittlePink_git.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LittlePink_git.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		86CA348C27A5B5B300F4113F /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		86CA348E27A5B8CD00F4113F /* FollowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowVC.swift; sourceTree = "<group>"; };
+		86CA349027A5B8F700F4113F /* DiscovevryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscovevryVC.swift; sourceTree = "<group>"; };
+		86CA349227A5B91600F4113F /* NearByVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearByVC.swift; sourceTree = "<group>"; };
+		86CA349427A5BACF00F4113F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		90A4C64C2797001D00F28FEA /* LittlePink-git.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LittlePink-git.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		90A4C64F2797001D00F28FEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		90A4C6512797001D00F28FEA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		90A4C6532797001D00F28FEA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		90A4C6562797001D00F28FEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		90A4C6582797002000F28FEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		90A4C65B2797002000F28FEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -61,6 +69,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		86CA349627A5BCE200F4113F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				86CA348C27A5B5B300F4113F /* HomeVC.swift */,
+				86CA348E27A5B8CD00F4113F /* FollowVC.swift */,
+				86CA349027A5B8F700F4113F /* DiscovevryVC.swift */,
+				86CA349227A5B91600F4113F /* NearByVC.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		90A4C6432797001D00F28FEA = {
 			isa = PBXGroup;
 			children = (
@@ -85,11 +104,12 @@
 			children = (
 				90A4C64F2797001D00F28FEA /* AppDelegate.swift */,
 				90A4C6512797001D00F28FEA /* SceneDelegate.swift */,
-				90A4C6532797001D00F28FEA /* ViewController.swift */,
 				90A4C6552797001D00F28FEA /* Main.storyboard */,
 				90A4C6582797002000F28FEA /* Assets.xcassets */,
 				90A4C65A2797002000F28FEA /* LaunchScreen.storyboard */,
 				90A4C65D2797002000F28FEA /* Info.plist */,
+				86CA349627A5BCE200F4113F /* Home */,
+				86CA349427A5BACF00F4113F /* Constants.swift */,
 			);
 			path = "LittlePink-git";
 			sourceTree = "<group>";
@@ -210,9 +230,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90A4C6542797001D00F28FEA /* ViewController.swift in Sources */,
+				86CA348D27A5B5B300F4113F /* HomeVC.swift in Sources */,
+				86CA349327A5B91600F4113F /* NearByVC.swift in Sources */,
+				86CA348F27A5B8CD00F4113F /* FollowVC.swift in Sources */,
 				90A4C6502797001D00F28FEA /* AppDelegate.swift in Sources */,
+				86CA349527A5BACF00F4113F /* Constants.swift in Sources */,
 				90A4C6522797001D00F28FEA /* SceneDelegate.swift in Sources */,
+				86CA349127A5B8F700F4113F /* DiscovevryVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
