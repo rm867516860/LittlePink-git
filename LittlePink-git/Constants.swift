@@ -7,7 +7,9 @@
 
 import Foundation
 
-//定义常量
+// MARK: 定义常量
+// MARK: - 定义常量 （ma）cmd+shift+L
+
 let kFollowVCID = "FollowVCID"
 let kDiscovevryVCID = "DiscovevryVCID"
 let kNearByVCID = "NearByVCID"
