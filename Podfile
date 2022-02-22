@@ -7,4 +7,5 @@ target 'LittlePink-git' do
 
   # Pods for LittlePink-git
   pod 'XLPagerTabStrip', '~> 9.0'
+  pod 'CHTCollectionViewWaterfallLayout/ObjC'
 end

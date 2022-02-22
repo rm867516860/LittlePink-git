@@ -23,11 +23,15 @@ class HomeVC: ButtonBarPagerTabStripViewController {
         changeCurrentIndexProgressive = { (oldCell: ButtonBarViewCell?, newCell: ButtonBarViewCell?, progressPercentage: CGFloat, changeCurrentIndex: Bool, animated: Bool) -> Void in
             guard changeCurrentIndex == true else { return }
 
-            oldCell?.label.textColor = UIColor(white: 1, alpha: 0.6)  //选中状态
-            newCell?.label.textColor = UIColor.white                  //未选中状态
+            oldCell?.label.textColor = .secondaryLabel  //选中状态
+            newCell?.label.textColor = .label                  //未选中状态
 
            
         }
+        DispatchQueue.main.async {
+            self.moveToViewController(at: 1, animated: false)
+        }
+   
 
 
     }
@@ -37,7 +41,8 @@ class HomeVC: ButtonBarPagerTabStripViewController {
         let nearByVC = self.storyboard!.instantiateViewController(withIdentifier: kNearByVCID)
         let discoveryVC = self.storyboard!.instantiateViewController(withIdentifier: kDiscovevryVCID)
         
-        return [followVC,nearByVC,discoveryVC]
+        // MARK: -此处是按照顺序展示
+        return [discoveryVC,followVC,nearByVC]
     }
     
 
